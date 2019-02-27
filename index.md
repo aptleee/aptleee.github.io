@@ -38,8 +38,10 @@ so for any character (state) in the pattern, its restart state X either be 0 or 
 
 consider following situations:
 
+<pre>
 0 1 2 3 4 5 6 7 <br/>
-&nbsp;  A B C E A B C
+  A B C E A B C
+</pre>
 
 for 1(A), 2(B), 3(C), 4(E), their restart state is 0<br/>
 for 5(A), its restart state is 1(A)<br/>
