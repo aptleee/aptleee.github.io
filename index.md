@@ -2,7 +2,7 @@
 
 # Construct a DFA
 
-```
+```go
   	R, m := 256, len(p)
 	dfa := make([][]int, R) 
 	for i := 0; i < R; i++ {
