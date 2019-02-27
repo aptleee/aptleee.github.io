@@ -24,6 +24,26 @@
 ### what does x = dfa[p[j]][x] mean?
 x is the restart state, and x start to increament when there is a character in the pattern that is the same as the first character in pattern
 
+so for any character (state) in the pattern, its restart state X either be 0 or the index of the same character to the left of it. If there are multiple, it should be the first one.
 
+consider following situations:
+
+0 1 2 3 4 5 6 7
+  A B C E A B C
+for 1(A), 2(B), 3(C), 4(D), their restart state is 0
+for 5(A), its restart state is 1(A)
+for 6(B), its restart state is 2(B)
+for 7(C), its restart state is 3(C)
+
+the reason is: if there is a mismatch as following:
+
+s: A B C E A B D
+p: A B C E A B C
+
+the next state should be:
+
+s: A B C E A B D
+p:         A B C E A B D
+and then compare D and C
 
 
