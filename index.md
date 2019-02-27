@@ -14,7 +14,6 @@
 		for c := 0; c < R; c++ {
 			dfa[c][j] = dfa[c][x]
 		}
-		fmt.Println("x == ", x)
 		dfa[p[j]][j] = j+1
 		x = dfa[p[j]][x]
 
