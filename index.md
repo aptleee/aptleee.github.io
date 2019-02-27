@@ -1,6 +1,6 @@
-## DFA
+# DFA
 
-# Construct a DFA
+### Construct a DFA
 
 ```go
   	R, m := 256, len(p)
