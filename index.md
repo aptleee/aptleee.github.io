@@ -1,6 +1,6 @@
 ## DFA
 
-Construct a DFA
+# Construct a DFA
 
 ```
   R, m := 256, len(p)
@@ -21,6 +21,9 @@ Construct a DFA
 	}
 ```
 
+### what does x = dfa[p[j]][x] mean?
+x is the restart state, and x start to increament when there is a character in the pattern that is the same as the first character in pattern
 
-### what does X mean?
+
+
 
