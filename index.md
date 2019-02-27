@@ -21,7 +21,20 @@
 ```
 
 ### what does x = dfa[p[j]][x] mean?
-x is the restart state, and x start to increament when there is a character in the pattern that is the same as the first character in pattern
+x is the restart state, 
+
+few properties to understand X:<br/>
+X can only increment 1 by 1, but it can drop to 0 or 1 suddenly.<br/>
+X is initialized to 0<br/>
+when will X become 1?<br/>
+when we encounter a character in the pattern that is the same as the first character in pattern.
+
+when will X increment?<br/>
+when character at X+1 is the same as character at p[j]
+
+when will X drop to 0?<br/>
+when we encounter a character that has not showed up in the pattern before
+
 
 so for any character (state) in the pattern, its restart state X either be 0 or the index of the same character to the left of it. If there are multiple, it should be the first one.
 
