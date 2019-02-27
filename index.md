@@ -55,8 +55,9 @@ p: A B C E A B C
 
 the next state should be:
 
+<pre>
 s: A B C E A B D<br/>
-&nbsp;                p: A B C E A B D<br/>
+p:         A B C E A B D<br/>
 and then compare D and C
-
+</pre>
 
