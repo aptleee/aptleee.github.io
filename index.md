@@ -2,7 +2,7 @@
 
 ### Construct a DFA
 
-```
+<pre>
   	R, m := 256, len(p)
 	dfa := make([][]int, R) 
 	for i := 0; i < R; i++ {
@@ -18,7 +18,7 @@
 		x = dfa[p[j]][x]
 
 	}
-```
+</pre>
 
 ### what does x = dfa[p[j]][x] mean?
 Few properties to understand X:<br/>
