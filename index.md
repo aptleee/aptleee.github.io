@@ -21,9 +21,7 @@
 ```
 
 ### what does x = dfa[p[j]][x] mean?
-x is the restart state, 
-
-few properties to understand X:<br/>
+Few properties to understand X:<br/>
 1.X can only increment 1 by 1, but it can drop to 0 or 1 suddenly.<br/>
 
 2.when will X become 1?<br/>
