@@ -1,5 +1,5 @@
 # Li Xiang
-it's happy to be a gopher
+learn yourself a Haskell
 
 ## blog
 
